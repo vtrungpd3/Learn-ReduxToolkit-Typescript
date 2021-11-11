@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": [ // Chỉ định một tập hợp các tệp khai báo thư viện được đóng gói mô tả môi trường thời gian chạy đích.
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true, // Cho phép các tệp JavaScript trở thành một phần của chương trình của bạn
+    "skipLibCheck": true, // Bỏ qua loại kiểm tra tất cả các tệp .d.ts.
+    "esModuleInterop": true, // Phát thêm JavaScript để hỗ trợ dễ dàng cho việc nhập các mô-đun CommonJS. Điều này cho phép allowSyntheticDefaultImports để tương thích với loại.
+    "allowSyntheticDefaultImports": true, // Cho phép 'nhập x từ y' khi mô-đun không có xuất mặc định.
+    "strict": true,
+    "forceConsistentCasingInFileNames": true, // Đảm bảo rằng cách viết hoa là đúng trong import.
+    "noFallthroughCasesInSwitch": true, // Bật báo cáo lỗi cho các trường hợp dự phòng trong các câu lệnh chuyển đổi.
+    "module": "esnext", // Chỉ định mã mô-đun nào được tạo.
+    "moduleResolution": "node", // Chỉ định cách TypeScript tra cứu tệp từ một mã định danh mô-đun nhất định.
+    "resolveJsonModule": true, // Cho phép nhập tệp .json
+    "isolatedModules": true,  // Đảm bảo rằng mỗi tệp có thể được chuyển một cách an toàn mà không cần dựa vào các lần nhập khác.
+    "noEmit": true, // Tắt tệp phát ra từ bộ biên dịch.
+    "jsx": "react-jsx" // Chỉ định mã JSX nào được tạo.
+  },
+  "include": [
+    "src"
+  ]
+}

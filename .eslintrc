@@ -1,0 +1,62 @@
+// {
+//     "root": true,
+//     "extends": [
+//         "eslint:recommended",
+//         "plugin:@typescript-eslint/recommended", // uses typescript-specific linting rules
+//         "plugin:react/recommended", // uses react-specific linting rules,
+//         "plugin:prettier/recommended", // uses react-specific linting rules
+//         "plugin:react-hooks/recommended"
+//     ],
+//     "plugins": [
+//         "react",
+//         "react-hooks",
+//         "import" // eslint-plugin-import for custom configure
+//     ],
+//     "settings": {
+//         "react": {
+//             "version": "latest" // https://github.com/yannickcr/eslint-plugin-react/issues/1955#issuecomment-619475509
+//         }
+//     },
+//     "rules": {
+//         "react-native/no-inline-styles": 0,
+//         "no-console": 1,
+//         "no-unused-vars": 0,
+//         "@typescript-eslint/no-explicit-any": [
+//             "error",
+//             {
+//                 "ignoreRestArgs": true
+//             }
+//         ],
+//         "@typescript-eslint/explicit-module-boundary-types": 0,
+//         "@typescript-eslint/no-empty-function": 0,
+//         "@typescript-eslint/ban-types": 0,
+//         "react/prop-types": 0,
+//         "react/display-name": 0,
+//         "import/order": [
+//             2,
+//             {
+//                 "groups": [
+//                     "builtin",
+//                     "external",
+//                     "internal"
+//                 ],
+//                 "pathGroups": [
+//                     {
+//                         "pattern": "react",
+//                         "group": "external",
+//                         "position": "before"
+//                     }
+//                 ],
+//                 "pathGroupsExcludedImportTypes": [
+//                     "react"
+//                 ],
+//                 "newlines-between": "always",
+//                 "alphabetize": {
+//                     "order": "asc",
+//                     "caseInsensitive": true
+//                 }
+//             }
+//         ],
+//         "react/react-in-jsx-scope": 0
+//     }
+// }
